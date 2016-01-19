@@ -51,7 +51,7 @@ section.hero {
     button {
       background: white;
       color: $title;
-      border: none;
+      border: 1px solid $border;
       border-radius: 3px;
       padding: 10px 20px;
       font-size: .8em;
@@ -77,31 +77,64 @@ section.hero {
   }
   h1, h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
+    font-weight: lighter;
+    line-height: 1.2;
   }
   h1 {
     @include span-columns(8 of 12);
     @include shift(2);
   }
   h2 {
-    font-size: 1.3em;
-    font-weight: lighter;
+    font-size: 1.5em;
   }
   form {
     @include span-columns(12);
     input {
       width: 100%;
     }
+    img.arrow {
+      position: absolute;
+      z-index: 99;
+      left: 115px;
+      top: 450px;
+      width: 15px;
+    }
+    img.arrow.right {
+      left: 275px;
+    }
     select {
-      width: 49%;
+      width: 48%;
+      padding: 20px;
+      margin-top: 10px;
+      border: 0;
+      border-radius: 3px;
+      -webkit-appearance: none;
+      padding-left: 30px;
+    }
+    input, select {
+      padding: 20px 0 20px 10px;
+      border-radius: 3px;
+      border: 1px solid $border;
+      font-size: 1em;
+      color: $info;
+      font-family: 'Lato', sans-serif;
+    }
+    select.location {
+      margin-right: 2%;
     }
     button {
       width: 100%;
       background: $base01;
       color: white;
+      font-size: 1em;
       border: none;
       font-weight: 500;
+      padding: 20px 0;
+      border-radius: 3px;
+      margin: 15px auto 30px;
+      font-family: 'Lato', sans-serif;
     }
   }
 }
@@ -126,11 +159,18 @@ main.featured {
     }
   }
   section.events {
-    // @include span-columns(12);
+    @include span-columns(12);
     width: 100%;
     margin: 1%;
     article.event {
+      @include span-columns(12);
       margin: 20px auto;
+      img {
+        width: 100%;
+        height: 260px;
+        // width: 260px;
+        object-fit: cover;
+      }
       p.category {
         color: $info;
         text-transform: uppercase;
@@ -179,6 +219,20 @@ main.featured {
 
 footer {
   @include outer-container(100%);
-  border-top: 1px solid gray;
+  border-top: 1px solid $border;
   text-align: center;
+  padding: 30px 0;
+  img {
+    height: 30px;
+    margin: 0 5px;
+  }
+  p, a {
+    color: $info;
+    font-size: .9em;
+    font-family: 'Open Sans', sans-serif;
+  }
+  a {
+    text-decoration: underline;
+    margin-left: 10px;
+  }
 }
