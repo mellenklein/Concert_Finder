@@ -15,6 +15,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
     a {
       text-decoration: none;
       color: black;
@@ -34,28 +35,58 @@ div.wrapper {
 
 section.hero {
   @include outer-container(100%);
-  background-color: pink;
+  background: url('../images/background.png') no-repeat center center;
+  background-position: 100% 0%;
+  background-size: cover;
   padding: 10px;
+  color: white;
   header {
     @include span-columns(12);
     width: 100%;
-    background-color: turquoise;
+    a {
+      color: white;
+      font-size: .8em;
+      margin: 25px;
+    }
+    button {
+      background: white;
+      color: $title;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 20px;
+      font-size: .8em;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+    }
     &::after {
       display: block;
       content: "";
       clear: both;
     }
     img {
-      @include span-columns(2);
+      @include span-columns(2 of 12);
       height: 55px;
       width: 50px;
       margin-right: 0;
     }
     nav {
-      @include span-columns(10);
+      @include span-columns(10 of 12);
       text-align: right;
       float: right;
     }
+  }
+  h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    text-align: center;
+  }
+  h1 {
+    @include span-columns(8 of 12);
+    @include shift(2);
+  }
+  h2 {
+    font-size: 1.3em;
+    font-weight: lighter;
   }
   form {
     @include span-columns(12);
@@ -67,6 +98,10 @@ section.hero {
     }
     button {
       width: 100%;
+      background: $base01;
+      color: white;
+      border: none;
+      font-weight: 500;
     }
   }
 }
@@ -80,15 +115,61 @@ main.featured {
   padding-bottom: 100px;
   nav.filters {
     @include span-columns(12);
+    margin: 0 0 20px 5px;
+    .active {
+      border-bottom: 3px solid $base01;
+      padding-bottom: 5px;
+    }
+    a {
+      font-size: .9em;
+      margin-right: 20px;
+    }
   }
   section.events {
     // @include span-columns(12);
     width: 100%;
     margin: 1%;
+    article.event {
+      margin: 20px auto;
+      p.category {
+        color: $info;
+        text-transform: uppercase;
+        font-size: .75em;
+      }
+      p.title {
+        font-family: 'Open Sans', sans-serif;
+        color: $title;
+        padding-bottom: 16px;
+        margin: 0;
+        border-bottom: 1px solid $border;
+      }
+      div.location, div.price {
+        width: 45%;
+        display: inline-block;
+        p.range, p.city {
+          font-family: 'Open Sans', sans-serif;
+        }
+      }
+      div.location {
+        text-align: right;
+        padding-right: 15px;
+      }
+      div.price {
+        border-left: 1px solid $border;
+        padding-left: 15px;
+      }
+    }
   }
   button {
     margin: 0 auto;
     display: block;
+    color: $base01;
+    border: 1px solid $border;
+    border-radius: 3px;
+    background: none;
+    font-weight: 700;
+    padding: 15px 50px;
+    font-size: .9em;
   }
 }
 

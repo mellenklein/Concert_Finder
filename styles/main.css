@@ -10,7 +10,8 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Lato', sans-serif; }
   body a {
     text-decoration: none;
     color: black; }
@@ -31,8 +32,11 @@ section.hero {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: pink;
-  padding: 10px; }
+  background: url("../images/background.png") no-repeat center center;
+  background-position: 100% 0%;
+  background-size: cover;
+  padding: 10px;
+  color: white; }
   section.hero::after {
     clear: both;
     content: "";
@@ -42,10 +46,22 @@ section.hero {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    width: 100%;
-    background-color: turquoise; }
+    width: 100%; }
     section.hero header:last-child {
       margin-right: 0; }
+    section.hero header a {
+      color: white;
+      font-size: .8em;
+      margin: 25px; }
+    section.hero header button {
+      background: white;
+      color: #E3694C;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 20px;
+      font-size: .8em;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700; }
     section.hero header::after {
       display: block;
       content: "";
@@ -69,6 +85,21 @@ section.hero {
       float: right; }
       section.hero header nav:last-child {
         margin-right: 0; }
+  section.hero h1, section.hero h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    text-align: center; }
+  section.hero h1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    section.hero h1:last-child {
+      margin-right: 0; }
+  section.hero h2 {
+    font-size: 1.3em;
+    font-weight: lighter; }
   section.hero form {
     float: left;
     display: block;
@@ -81,7 +112,11 @@ section.hero {
     section.hero form select {
       width: 49%; }
     section.hero form button {
-      width: 100%; }
+      width: 100%;
+      background: #90C45B;
+      color: white;
+      border: none;
+      font-weight: 500; }
 
 main.featured {
   max-width: 90%;
@@ -96,15 +131,52 @@ main.featured {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 100%;
+    margin: 0 0 20px 5px; }
     main.featured nav.filters:last-child {
       margin-right: 0; }
+    main.featured nav.filters .active {
+      border-bottom: 3px solid #90C45B;
+      padding-bottom: 5px; }
+    main.featured nav.filters a {
+      font-size: .9em;
+      margin-right: 20px; }
   main.featured section.events {
     width: 100%;
     margin: 1%; }
+    main.featured section.events article.event {
+      margin: 20px auto; }
+      main.featured section.events article.event p.category {
+        color: #B3B5BE;
+        text-transform: uppercase;
+        font-size: .75em; }
+      main.featured section.events article.event p.title {
+        font-family: 'Open Sans', sans-serif;
+        color: #E3694C;
+        padding-bottom: 16px;
+        margin: 0;
+        border-bottom: 1px solid #E1E2E5; }
+      main.featured section.events article.event div.location, main.featured section.events article.event div.price {
+        width: 45%;
+        display: inline-block; }
+        main.featured section.events article.event div.location p.range, main.featured section.events article.event div.location p.city, main.featured section.events article.event div.price p.range, main.featured section.events article.event div.price p.city {
+          font-family: 'Open Sans', sans-serif; }
+      main.featured section.events article.event div.location {
+        text-align: right;
+        padding-right: 15px; }
+      main.featured section.events article.event div.price {
+        border-left: 1px solid #E1E2E5;
+        padding-left: 15px; }
   main.featured button {
     margin: 0 auto;
-    display: block; }
+    display: block;
+    color: #90C45B;
+    border: 1px solid #E1E2E5;
+    border-radius: 3px;
+    background: none;
+    font-weight: 700;
+    padding: 15px 50px;
+    font-size: .9em; }
 
 footer {
   max-width: 100%;
