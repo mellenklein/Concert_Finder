@@ -9,6 +9,103 @@
     <meta name="description" content="A project demonstrating my abilities as a front end web developer.">
   </head>
   <body>
-    <h1>Hello there!</h1>
+    <div class="wrapper">
+      <section class="hero">
+        <header>
+          <img src="images/logo.png" alt="Caddis logo" />
+          <nav>
+            <a href="#" class="hide">Browse</a>
+            <a href="#" class="hide">Discover</a>
+            <a href="#">Add Event</a>
+            <button type="button" name="button">Join us</button>
+          </nav>
+        </header>
+        <h1>Amazing performances near you</h1>
+        <h2>Discover the top live music events in the Southeast</h2>
+        <form class="search" method="post">
+          <input type="text" name="artist" placeholder="Enter your favorite artist or genre">
+          <select name="location">
+            <option value="option">Nashville</option>
+            <option value="option">Atlanta</option>
+            <option value="option">Birmingham</option>
+            <option value="option">Los Angeles</option>
+            <option value="option">New York</option>
+            <option value="option">San Francisco</option>
+          </select>
+          <select name="budget">
+            <option value="option">$0-20</option>
+            <option value="option">$21-50</option>
+            <option value="option">$51-100</option>
+            <option value="option">$100 +</option>
+          </select>
+          <button type="submit" name="submit">Find events</button>
+        </form>
+      </section>
+      <main class="featured">
+        <nav class="filters">
+          <a href="#">Most popular</a>
+          <a href="#">Coming up</a>
+          <a href="#">Near you</a>
+        </nav>
+        <section class="events">
+          <article class="event">
+            <img src="images/event1.png" alt="Electric guitar and cable plugged into amp, close up." />
+            <div class="info">
+              <p class="category">Country</p>
+              <p class="title">Kenny Chesney w/ Grace Potter</p>
+              <div class="location">
+                <p class="category">Location</p>
+                <p class="city">Nashville, TN</p>
+              </div>
+              <div class="price">
+                <p class="category">Price</p>
+                <p class="range">$30-260</p>
+              </div>
+            </div>
+          </article>
+          <article class="event">
+            <img src="images/event2.png" alt="Electric guitar and cable plugged into amp, close up." />
+            <div class="info">
+              <p class="category">Jazz</p>
+              <p class="title">Gerald Albright Band</p>
+              <div class="location">
+                <p class="category">Location</p>
+                <p class="city">Atlanta, GA</p>
+              </div>
+              <div class="price">
+                <p class="category">Price</p>
+                <p class="range">$15-90</p>
+              </div>
+            </div>
+          </article>
+          <article class="event">
+            <img src="images/event3.png" alt="Electric guitar and cable plugged into amp, close up." />
+            <div class="info">
+              <p class="category">Electronic</p>
+              <p class="title">The Rock Church</p>
+              <div class="location">
+                <p class="category">Location</p>
+                <p class="city">Birmingham, AL</p>
+              </div>
+              <div class="price">
+                <p class="category">Price</p>
+                <p class="range">$20-40</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <button type="button" name="discover">Discover more</button>
+      </main>
+      <footer>
+        <div class="icons">
+          <i>f</i>
+          <i>t</i>
+          <i>g+</i>
+        </div>
+        <nav class="footer">
+          <p>(c) 2015 Caddis <a href="#">Privacy Policy</a><a href="#">Terms of Use</a></p>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>

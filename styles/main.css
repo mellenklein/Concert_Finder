@@ -6,5 +6,113 @@ html {
 *::before {
   box-sizing: inherit; }
 
-h1 {
-  color: purple; }
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  body a {
+    text-decoration: none;
+    color: black; }
+
+div.wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  div.wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.hide {
+  display: none; }
+
+section.hero {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: pink;
+  padding: 10px; }
+  section.hero::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.hero header {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    width: 100%;
+    background-color: turquoise; }
+    section.hero header:last-child {
+      margin-right: 0; }
+    section.hero header::after {
+      display: block;
+      content: "";
+      clear: both; }
+    section.hero header img {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%;
+      height: 55px;
+      width: 50px;
+      margin-right: 0; }
+      section.hero header img:last-child {
+        margin-right: 0; }
+    section.hero header nav {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      text-align: right;
+      float: right; }
+      section.hero header nav:last-child {
+        margin-right: 0; }
+  section.hero form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    section.hero form:last-child {
+      margin-right: 0; }
+    section.hero form input {
+      width: 100%; }
+    section.hero form select {
+      width: 49%; }
+    section.hero form button {
+      width: 100%; }
+
+main.featured {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px; }
+  main.featured::after {
+    clear: both;
+    content: "";
+    display: table; }
+  main.featured nav.filters {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    main.featured nav.filters:last-child {
+      margin-right: 0; }
+  main.featured section.events {
+    width: 100%;
+    margin: 1%; }
+  main.featured button {
+    margin: 0 auto;
+    display: block; }
+
+footer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid gray;
+  text-align: center; }
+  footer::after {
+    clear: both;
+    content: "";
+    display: table; }

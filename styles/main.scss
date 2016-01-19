@@ -2,6 +2,102 @@
 @import "variables";
 @import "../bower_components/neat/app/assets/stylesheets/neat";
 
-h1 {
-  color: purple;
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+}
+
+div.wrapper {
+  @include outer-container(100%);
+}
+.hide {
+  display: none;
+}
+
+  ///////////////////////////////
+ //         HERO              //
+///////////////////////////////
+
+section.hero {
+  @include outer-container(100%);
+  background-color: pink;
+  padding: 10px;
+  header {
+    @include span-columns(12);
+    width: 100%;
+    background-color: turquoise;
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+    img {
+      @include span-columns(2);
+      height: 55px;
+      width: 50px;
+      margin-right: 0;
+    }
+    nav {
+      @include span-columns(10);
+      text-align: right;
+      float: right;
+    }
+  }
+  form {
+    @include span-columns(12);
+    input {
+      width: 100%;
+    }
+    select {
+      width: 49%;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}
+
+  ///////////////////////////////
+ //         MAIN              //
+///////////////////////////////
+
+main.featured {
+  @include outer-container(90%);
+  padding-bottom: 100px;
+  nav.filters {
+    @include span-columns(12);
+  }
+  section.events {
+    // @include span-columns(12);
+    width: 100%;
+    margin: 1%;
+  }
+  button {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+  ///////////////////////////////
+ //         FOOTER            //
+///////////////////////////////
+
+footer {
+  @include outer-container(100%);
+  border-top: 1px solid gray;
+  text-align: center;
 }
