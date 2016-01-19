@@ -32,7 +32,7 @@ section.hero {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: url("../images/background.png") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(74, 61, 55, 0.65)), url("../images/background.png") no-repeat center center;
   background-position: 100% 0%;
   background-size: cover;
   padding: 10px;
@@ -95,12 +95,13 @@ section.hero {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
+    width: 82.94039%;
+    margin-left: 8.5298%; }
     section.hero h1:last-child {
       margin-right: 0; }
   section.hero h2 {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    line-height: normal; }
   section.hero form {
     float: left;
     display: block;
@@ -161,7 +162,7 @@ main.featured {
     display: block;
     margin-right: 2.35765%;
     width: 100%;
-    margin: 0 0 20px 5px; }
+    margin: 30px 0 20px 5px; }
     main.featured nav.filters:last-child {
       margin-right: 0; }
     main.featured nav.filters .active {
