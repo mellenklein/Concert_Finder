@@ -1,0 +1,21 @@
+{
+  "name": "_concertFinder",
+  "homepage": "https://github.com/mellenklein/Concert_Finder",
+  "authors": [
+    "Mary Ellen Klein <maryellenklein@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2"
+  }
+}
