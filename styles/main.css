@@ -52,7 +52,11 @@ section.hero {
     section.hero header a {
       color: white;
       font-size: .8em;
-      margin: 25px; }
+      margin: 25px;
+      transition: color 0.3s ease; }
+      section.hero header a:hover {
+        color: #90C45B;
+        transition: color 0.3s ease; }
     section.hero header button {
       background: white;
       color: #E3694C;
@@ -61,7 +65,11 @@ section.hero {
       padding: 10px 20px;
       font-size: .8em;
       font-family: 'Lato', sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: opacity 0.5 ease; }
+      section.hero header button:hover {
+        opacity: 0.5;
+        transition: opacity 0.5 ease; }
     section.hero header::after {
       display: block;
       content: "";
@@ -120,6 +128,8 @@ section.hero {
       margin-right: 0; }
     section.hero form input {
       width: 100%; }
+    section.hero form figure {
+      position: relative; }
     section.hero form img.arrow {
       position: absolute;
       z-index: 99;
@@ -129,13 +139,16 @@ section.hero {
     section.hero form img.arrow.right {
       left: 275px; }
     section.hero form select {
+      background: #fff url("../images/arrow.png") no-repeat 90% 50%;
+      background-size: 8%;
       width: 48%;
       padding: 20px;
       margin-top: 10px;
       border: 0;
       border-radius: 3px;
       -webkit-appearance: none;
-      padding-left: 30px; }
+      padding-left: 30px;
+      color: black; }
     section.hero form input, section.hero form select {
       padding: 20px 0 20px 10px;
       border-radius: 3px;

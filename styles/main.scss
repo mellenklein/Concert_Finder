@@ -50,6 +50,11 @@ section.hero {
       color: white;
       font-size: .8em;
       margin: 25px;
+      transition: color .3s ease;
+      &:hover {
+        color: $base01;
+        transition: color .3s ease;
+      }
     }
     button {
       background: white;
@@ -60,6 +65,11 @@ section.hero {
       font-size: .8em;
       font-family: 'Lato', sans-serif;
       font-weight: 700;
+      transition: opacity 0.5 ease;
+      &:hover {
+        opacity: 0.5;
+        transition: opacity 0.5 ease;
+      }
     }
     &::after {
       display: block;
@@ -102,6 +112,9 @@ section.hero {
     input {
       width: 100%;
     }
+    figure {
+      position: relative;
+    }
     img.arrow {
       position: absolute;
       z-index: 99;
@@ -113,6 +126,8 @@ section.hero {
       left: 275px;
     }
     select {
+      background: #fff url("../images/arrow.png") no-repeat 90% 50%;
+      background-size: 8%;
       width: 48%;
       padding: 20px;
       margin-top: 10px;
@@ -120,6 +135,7 @@ section.hero {
       border-radius: 3px;
       -webkit-appearance: none;
       padding-left: 30px;
+      color: black;
     }
     input, select {
       padding: 20px 0 20px 10px;
