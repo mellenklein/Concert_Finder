@@ -65,10 +65,12 @@ section.hero {
       font-size: .8em;
       font-family: 'Lato', sans-serif;
       font-weight: 700;
-      transition: opacity 0.5 ease;
+      transition: all 0.5s ease;
       &:hover {
-        opacity: 0.5;
-        transition: opacity 0.5 ease;
+        color: white;
+        background: $title;
+        border: 1px solid #CE4524;
+        transition: color 0.3s ease, background 0.5s ease;
       }
     }
     &::after {
@@ -153,12 +155,17 @@ section.hero {
       background: $base01;
       color: white;
       font-size: 1em;
-      border: none;
+      border: 1px solid $base02;
       font-weight: 500;
       padding: 21px 1px;
       border-radius: 3px;
       margin: 10px auto 30px;
       font-family: 'Lato', sans-serif;
+      transition: background 0.3s ease;
+      &:hover {
+        background: $base02;
+        transition: background 0.3s ease;
+      }
     }
   }
 }
@@ -235,6 +242,13 @@ main.featured {
     font-weight: 700;
     padding: 15px 50px;
     font-size: .9em;
+    transition: color 0.3s ease, background 0.3s ease;
+    &:hover {
+      color: white;
+      background: $base01;
+      border: 1px solid $base02;
+      transition: color 0.3s ease, background 0.3s ease, border 0.3s ease;
+    }
   }
 }
 
